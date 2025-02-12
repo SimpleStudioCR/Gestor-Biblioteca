@@ -1,3 +1,5 @@
+package utl;
+
 import java.io.BufferedWriter;
 import java.io.BufferedReader;
 import java.io.FileWriter;
@@ -17,7 +19,7 @@ public class Biblioteca {
 
     public void agregarLibro(Libro libro) {
         libros.add(libro);
-        System.out.println("Libro agregado: " + libro.getTitulo());
+        System.out.println("utl.Libro agregado: " + libro.getTitulo());
     }
 
     public void mostrarLibrosDisponibles() {
@@ -30,7 +32,7 @@ public class Biblioteca {
     }
 
     public void buscarLibro(String criterio) {
-        System.out.println("\nLibro buscado: " + criterio);
+        System.out.println("\nutl.Libro buscado: " + criterio);
         boolean encontrado = false;
 
         for (Libro libro : libros) {

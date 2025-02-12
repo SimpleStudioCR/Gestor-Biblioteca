@@ -1,4 +1,6 @@
-
+import utl.Biblioteca;
+import utl.Libro;
+import utl.Usuario;
 
 public class MainGestor {
     public static void main(String[] args) {
@@ -13,13 +15,13 @@ public class MainGestor {
         // aqui se agregan libros
         biblioteca.agregarLibro(new Libro("The bible", "Dios", 1545));
         biblioteca.agregarLibro(new Libro("El principito", "Antoine de Saint-Exupéry", 1943));
-        biblioteca.agregarLibro(new Libro("El Libro Rojo", "Carl Gustav Jung", 2009));
-        biblioteca.agregarLibro(new Libro("Libro de Mayorgas", "Don Jorge Mayorga", 2006));
+        biblioteca.agregarLibro(new Libro("El utl.Libro Rojo", "Carl Gustav Jung", 2009));
+        biblioteca.agregarLibro(new Libro("utl.Libro de Mayorgas", "Don Jorge Mayorga", 2006));
 
         biblioteca.mostrarLibrosDisponibles();
 
         biblioteca.buscarLibro("Dios");
-        biblioteca.buscarLibro("El Libro Rojo");
+        biblioteca.buscarLibro("El utl.Libro Rojo");
 
         biblioteca.prestarLibro("The Bible", usuario1);
         biblioteca.mostrarLibrosDisponibles();

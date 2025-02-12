@@ -1,3 +1,5 @@
+package utl;
+
 public class Usuario {
     private String nombre;
     private int edad;
@@ -23,6 +25,6 @@ public class Usuario {
     }
 
     public void mostrarUsuario(){
-        System.out.println("Usuario: " + nombre + ", Edad: " + edad + ", ID: " + idUsuario);
+        System.out.println("utl.Usuario: " + nombre + ", Edad: " + edad + ", ID: " + idUsuario);
     }
 }
